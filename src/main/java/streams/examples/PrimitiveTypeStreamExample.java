@@ -1,4 +1,4 @@
-package streams.exapmles;
+package streams.examples;
 
 import streams.data.Dish;
 

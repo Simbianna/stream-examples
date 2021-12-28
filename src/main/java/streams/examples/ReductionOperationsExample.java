@@ -1,4 +1,4 @@
-package streams.exapmles;
+package streams.examples;
 
 import java.util.List;
 import java.util.Optional;

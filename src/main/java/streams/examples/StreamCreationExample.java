@@ -1,4 +1,4 @@
-package streams.exapmles;
+package streams.examples;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class StreamCreationExamples {
+public class StreamCreationExample {
 
     public static Stream<String> ofStringsStream(String... vals) {
         return Stream.of(vals);

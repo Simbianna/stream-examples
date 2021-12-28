@@ -1,4 +1,4 @@
-package streams.exapmles;
+package streams.examples;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

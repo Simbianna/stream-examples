@@ -1,7 +1,8 @@
-package streams.exapmles;
+package streams.examples;
 
 import streams.data.Dish;
 
+import java.util.ArrayList;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Optional;
@@ -10,7 +11,7 @@ import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.*;
 
 
-public class CollectorsExamples {
+public class CollectorsExample {
 
     public static long countDishes(List<Dish> dishes) {
         return dishes.stream()
@@ -38,6 +39,15 @@ public class CollectorsExamples {
         return dishes.stream()
                 .map(Dish::getName)
                 .collect(joining(", "));
+    }
+
+    public static List<Dish> collectAll(List<Dish> dishes) {
+        return dishes.stream()
+                .collect(
+                        ArrayList::new,
+                        List::add,
+                        List::addAll
+                );
     }
 
 
